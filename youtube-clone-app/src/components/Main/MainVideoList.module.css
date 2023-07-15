@@ -1,35 +1,77 @@
+@media (min-width: 1920px) {
+    .mainWrapper .videoBox{
+        width: 19%;
+    }
+}
+@media (max-width: 1920px) {
+    .mainWrapper .videoBox{
+        width: 24%;
+    }
+}
 
-.mainWrapper{
-    min-width: 1200px;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media (max-width: 1200px) {
+    .mainWrapper .videoBox{
+        width: 49%;
+    }
+}
+
+@media (max-width: 640px) {
+    .mainWrapper .videoBox{
+        width: 100%;
+    }
 }
 
 .videoBox{
-    width: 250px;
+    width: 24%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.thumbnails{
+    width: 100%;
+    border-radius: 2.5px;
+}
+
+.videoLink{
+    display: inline-block;
+    width: 100%;
+}
+
+.videoLink:hover > p.videoTitle{
+    font-size: 16px;
+    transition: all .5s;
+    display: block;
+}
+.videoLink:hover > img{
+    transform: scale(1.03);
+    transition: all .5s;
 }
 
 .videoTitle{
-    width: 250px;
+    padding: 0px 5px;
+    color: var(--color-main-text);
+    width: 100%;
     font-size: 15px;
-    margin: 3px 0;
-    height: 20px;
-    overflow: hidden;
-    white-space: normal;
-    text-overflow: ellipsis;
-}
-
-.videoDescription{
-    width: 250px;
-    height: 60px;
-    font-size: 10px;
     margin: 3px 0;
     overflow: hidden;
     white-space: wrap;
-    text-overflow: ellipsis;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.videoDescription{
+    padding: 0px 5px;
+    padding-bottom: 3px;
+    color: var(--color-sub-text);
+    font-size: 12px;
+    margin-top: 0px;
+    overflow: hidden;
+    white-space: wrap;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

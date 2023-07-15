@@ -15,13 +15,23 @@ ul{
 :root {
   --color-bg-dark: #282c34;
   --color-bg: #fdfffd;
-  --color-main-text: #ffffffec;
-  --color-sub-text: #d1d1d159;
+  --color-main-text: #040404ec;
+  --color-sub-text: #121212c5;
   --color-black: black;
+  --color-input: white;
 }
 
 html{
   background-color: var(--color-bg);
+  transition: all .7s;
+}
+
+html.dark{
+  background-color: var(--color-bg-dark);
+  transition: all .7s;
+  --color-main-text: #ffffffec;
+  --color-sub-text: #ffffffb0;
+  --color-input: rgba(255, 255, 255, 0.457);
 }
 
 body{
