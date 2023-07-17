@@ -1,0 +1,60 @@
+.relatedVideoBoxContainer{
+    border: 1px solid var(--color-box-bg);
+    width: 362px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    padding: 8px 2px;
+}
+
+.relatedVideoThumnail{
+border-radius:5px;
+background-size :cover ; 
+vertical-align: top;
+display: inline-block;
+width: 192px;
+height: 110px;
+}
+
+.relatedVideoBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.relatedVideoTextBox {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.relatedVideoTitle {
+    width: 170px;
+    font-size: 14px;
+    font-weight: 600;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: no-wrap;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    color: var(--color-main-text);
+    -webkit-box-orient: vertical;
+}
+
+.relatedVideoSubText{
+    width: 170px;
+    font-size: 12px;
+    margin: 0px;
+    color: var(--color-sub-text);
+    word-break: break-all;
+    overflow: hidden;
+    white-space: wrap;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

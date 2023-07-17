@@ -5,6 +5,8 @@
 *{
   text-decoration: none;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul{
@@ -13,7 +15,8 @@ ul{
 
 
 :root {
-  --color-bg-dark: #282c34;
+  --color-bg-dark: #000000;
+  --color-box-bg: #adaeb1;
   --color-bg: #fdfffd;
   --color-main-text: #040404ec;
   --color-sub-text: #121212c5;
@@ -29,6 +32,7 @@ html{
 html.dark{
   background-color: var(--color-bg-dark);
   transition: all .7s;
+  --color-box-bg: #282c34;
   --color-main-text: #ffffffec;
   --color-sub-text: #ffffffb0;
   --color-input: rgba(255, 255, 255, 0.457);

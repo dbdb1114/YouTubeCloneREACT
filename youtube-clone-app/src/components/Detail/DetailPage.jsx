@@ -1,14 +1,18 @@
-
-import { Section } from "../Common/Common"
-import RelatedVideoList from "./RelatedVideoList"
-import VideoPlay from "./VideoPlay"
+import { Section } from "../Common/Common";
+import RelatedVideoList from "./RelatedVideoList";
+import VideoPlay from "./VideoPlay";
+import ChannelInfo from "./VideolInfo";
 
 
 export default () => {
-
+    
+    
     return(
         <Section>
-            <VideoPlay/>
+            <div>
+                    <VideoPlay/>
+                    <ChannelInfo/>
+            </div>
             <RelatedVideoList/>
         </Section>
     )
